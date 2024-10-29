@@ -9,14 +9,12 @@ elif ! [ -x "$(command -v npm)" ]; then
 	exit 1
 fi
 
-git clone --depth 1 https://github.com/csmplay/nodecg || {
-	echo "Failed to download nodecg. Is it already installed?"
-	exit 1
-}
+git clone --depth 1 https://github.com/csmplay/nodecg
 cd nodecg || {
-	echo "Cannot find nodecg"
+	echo "Error! nodecg doesn't exist"
 	exit 1
 }
+git pull
 npm install
 # npx nodecg install "BUNDLE_REPO/BUNDLE_NAME"
 npm run build
