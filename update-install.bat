@@ -12,16 +12,13 @@ if errorlevel 1 (
 )
 
 git clone --depth 1 https://github.com/csmplay/nodecg
-if errorlevel 1 (
-    echo Failed to download nodecg. Is it already installed?
-    exit /b 1
-)
 
 cd nodecg || (
-    echo Cannot find nodecg
+    echo Error! nodecg doesn't exist
     exit /b 1
 )
 
+git pull
 npm install
-REM npx nodecg install "BUNDLE_REPO/BUNDLE_NAME"
+:: npx nodecg install "BUNDLE_REPO/BUNDLE_NAME"
 npm run build

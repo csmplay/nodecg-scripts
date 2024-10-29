@@ -13,7 +13,7 @@ Ensure that you have Node.js and git installed.
 3. Download and unpack
    [this repo zip](https://github.com/csmplay/nodecg-scripts/archive/refs/heads/windows.zip)
    **OR** run `git clone https://github.com/csmplay/nodecg-installer` in cmd
-4. Use scripts `install.bat`, `update.bat` and `run.bat` when needed
+4. Use scripts `update-install.bat` and `run.bat` when needed
 
 For Linux
 [switch branch to linux](https://github.com/csmplay/nodecg-installer/tree/linux)
