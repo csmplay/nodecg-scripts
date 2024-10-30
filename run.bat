@@ -4,18 +4,11 @@ cd nodecg || (
     exit /b 1
 )
 
-:: Requre to login to nodecg
-set NODECG_LOGIN=0
-
-:: String that is used to encrypt sessions
-:: CHANGE THIS IF YOU ARE USING NODECG_LOGIN
-set NODECG_SECRET="CSM is the best"
-
-:: Discord bot information
-:: It will allow all members of the server selected to use the bot
-:: SET THIS IF YOU ARE USING NODECG_LOGIN
-set NODECG_DISCORD_CLIENT=""
-set NODECG_DISCORD_SECRET=""
-set NODECG_DISCORD_SERVER_ID=""
+:: SET THIS IF RUNNING ON A REMOTE SERVER
+set NODECG_URL=""               :: URL TO YOUR NODECG SERVER
+set NODECG_SECRET=""            :: SESSION SECRET
+set NODECG_DISCORD_CLIENT=""    :: DISCORD CLIENT ID
+set NODECG_DISCORD_SECRET=""    :: DISCORD SECRET
+set NODECG_DISCORD_SERVER_ID="" :: DISCORD SERVER ID
 
 node .
