@@ -6,18 +6,11 @@ cd nodecg || {
 	exit 1
 }
 
-# Requre to login to nodecg
-export NODECG_LOGIN=0
-
-# String that is used to encrypt sessions
-# CHANGE THIS IF YOU ARE USING NODECG_LOGIN
-export NODECG_SECRET="CSM is the best"
-
-# Discord bot information
-# It will allow all members of the server selected to use the bot
-# SET THIS IF YOU ARE USING NODECG_LOGIN
-export NODECG_DISCORD_CLIENT=""
-export NODECG_DISCORD_SECRET=""
-export NODECG_DISCORD_SERVER_ID=""
+# SET THIS IF RUNNING ON A REMOTE SERVER
+export NODECG_URL=""               # URL TO YOUR NODECG SERVER
+export NODECG_SECRET=""            # SESSION SECRET
+export NODECG_DISCORD_CLIENT=""    # DISCORD CLIENT ID
+export NODECG_DISCORD_SECRET=""    # DISCORD SECRET
+export NODECG_DISCORD_SERVER_ID="" # DISCORD SERVER ID
 
 node .
